@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Mochiy+Pop+One&family=Roboto:ital,wght@0,300;1,300;1,400&family=Shadows+Into+Light&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Black Han Sans', sans-serif;;
+}
+a{
+    text-decoration: none;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    
+    
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*into section*/
+#into{
+    background-image: url(./img/중고거래.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#into::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
+}
+.content{
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+#into h1{
+    color: #fff;
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+}
+#into .uploadboard{
+    display: inline-block;
+    padding: 3px 5px;
+    margin-left: 10px;
+    font-size: 3em;
+    color: #fff;
+    border: 2px solid tomato;
+    background-color: transparent;
+    transition: .3s ease background-color;
+}
+#into .uploadboard:hover{
+    color: #fff;
+    background-color: tomato;
+}
+#into .board{
+    display: inline-block;
+    padding: 3px  5px;
+    margin-left: 10px;
+    font-size: 3em;
+    color: #fff;
+    border: 2px solid tomato;
+    background-color: transparent;
+    transition: .3s ease background-color;
+}
+#into .board:hover{
+    color: #fff;
+    background-color: tomato;
+}
+/* end into section*/

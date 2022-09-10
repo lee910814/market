@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/main.css" rel="stylesheet">
+    <title>중고팔아</title>
+</head>
+
+<body>
+    <!--소개글-->
+    <section id="into">
+        <div class="into container">
+            <div class="into content">
+                <h1>사용안하는 물건을 되팔아요</h1>
+                <a href="#" type="button" class="uploadboard">팔러가기</a>
+                <a href="#" type="button" class="board">사러가기</a>
+            </div>
+        </div>
+    </section>
+
+    <!--board section-->
+    <section id="board">
+        <div class="board container">
+            <div class="board-top">
+                <h1 class="section-title">중고팔아</h1>
+                <p>집에 사용안하고 있는 물건 방치하지마세요</p>
+            </div>
+            <div class="board-bottom">
+
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAx9AcifIAXDWuTA-k15sID7x_7d-oP2q0",
+            authDomain: "carat-9b3eb.firebaseapp.com",
+            projectId: "carat-9b3eb",
+            storageBucket: "carat-9b3eb.appspot.com",
+            messagingSenderId: "295026818100",
+            appId: "1:295026818100:web:65c1262532aeb18d80de61",
+            measurementId: "G-7MV08LHLDN"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
+</body>
+
+</html>
